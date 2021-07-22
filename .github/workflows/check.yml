@@ -1,10 +1,8 @@
-name: check tests/lint
+name: check lint
 
-# Controls when the action will run. Triggers the workflow on pull request and commits
+# Controls when the action will run. Triggers the workflow on pull request
 on:
   pull_request:
-    branches: [ main, release, check ]
-   commit:
     branches: [ main, release, check ]
 
 jobs:

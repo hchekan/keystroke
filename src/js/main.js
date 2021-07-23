@@ -8,7 +8,7 @@ function addMainData(arrMain) {
   });
 }
 
-// заполнение данных в Popup
+// заполнение данных в popup
 function addDetails(arrDetails) {
   arrDetails.forEach((item, i) => {
     document.querySelectorAll('.popup__details')[i].innerHTML = item;

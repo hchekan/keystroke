@@ -8,7 +8,7 @@ function addMainData(arrMain) {
   });
 }
 
-// заполнение данных в popup
+// заполнение данных в Popup
 function addDetails(arrDetails) {
   arrDetails.forEach((item, i) => {
     document.querySelectorAll('.popup__details')[i].innerHTML = item;
@@ -22,7 +22,7 @@ function toggleVisibility() {
   document.querySelector('.mainpage__container').classList.toggle('show');
 }
 
-// установка значений и видимости элементов в зависимости от localStorage
+// установка значений и видимости элементов в зависимости от LocalStorage
 function setValuesVisibility() {
   if (localStorage.length > 0) {
     document.querySelector('.mainpage__container').classList.toggle('show');
@@ -85,7 +85,7 @@ document.addEventListener('keydown', (event) => {
   addDetails(arrDetails);
 });
 
-// сохранение данных в localStorage
+// сохранение данных в LocalStorage
 function saveData() {
   localStorage.clear();
   const data = document.querySelectorAll('.popup__details');
@@ -97,7 +97,7 @@ function saveData() {
 
 document.querySelector('.button__save').addEventListener('click', saveData);
 
-// очистка данных из localStorage
+// очистка данных из LocalStorage
 function cleanLocalStorage() {
   localStorage.clear();
   document.querySelector('.button__clear').classList.toggle('show');
@@ -126,8 +126,8 @@ function expansion() {
 
 document.querySelector('.expansion__img').addEventListener('click', expansion);
 
-// открытие popup
+// открытие Popup
 document.querySelector('.more__img').addEventListener('click', toggleVisibility);
 
-// закрытие popup
+// закрытие Popup
 document.querySelector('.button__close__img').addEventListener('click', toggleVisibility);

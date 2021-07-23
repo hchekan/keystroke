@@ -126,8 +126,8 @@ function expansion() {
 
 document.querySelector('.expansion__img').addEventListener('click', expansion);
 
-// открытие Popup
+// открытие popup
 document.querySelector('.more__img').addEventListener('click', toggleVisibility);
 
-// закрытие Popup
+// закрытие popup
 document.querySelector('.button__close__img').addEventListener('click', toggleVisibility);
